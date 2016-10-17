@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="main.css">
+  <script src="pizza.js"></script> 
+  <title>Pizza Order</title>
+ </head>
+
+
+<body>
+  <h1>Pizza Order</h1>
+
+<!-- Toppings to select from -->
+  <ul>  
+      <li>Pineapple</li>
+      <li>Pepperoni</li>
+      <li>Mushrooms</li>
+      <li>Olives</li>
+      <li>Peppers</li>
+  </ul>
+
+
+<!-- User inputs topping choices -->
+<h2>What Toppings Would You Like? </h2>
+  <p> Enter your toppings from the list above separated with a comma.</p> 
+  <p>(Example: pineapple, pepper )</p>
+  <input type="text" id="inputbox"><br>
+  <br>
+  <button type="button" id="prepare">Prepare Order</button>
+
+<br>
+
+<!-- Selection Displayed -->
+
+<section class="preparedorder">   
+<!-- This shows what you have entered -->
+    <h2 class="headertitle"> This is what you ordered: </h2>
+
+    <div id="display">
+
+        </div>
+</section>
+
+<!-- Submit Button with Popup -->
+
+<button onclick="myFunction()">Submit Order</button>
+</body>
+</html>
