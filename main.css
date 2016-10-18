@@ -32,3 +32,9 @@ button {
 ul {
 	list-style-type: none; 
 }
+
+#submit {
+	color: red;
+	background-color: white; 
+	font-size: 15px;
+}

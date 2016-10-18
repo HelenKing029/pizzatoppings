@@ -1,5 +1,5 @@
 var toppings = ["pineapple", "pepper", "mushrooms", "olives", "pepperoni" ] 
-var prices = [1, 2, 2, 1, 1]
+var prices = [1, 2, 2, 1, 2]
 
 // from http://jsfiddle.net/y9wL27y0/
 var inputArray = [];
@@ -14,9 +14,6 @@ document.getElementById('prepare').onclick = function () {
     inputArray.push(input.value);
     screen.innerHTML = input.value;
 };
-document.getElementById('display').onclick = function () {
-    screen.innerHTML = inputArray
-};
 
 // store into array 
 // pass element through array
@@ -24,20 +21,27 @@ document.getElementById('display').onclick = function () {
 
 // list element and price
 // display user selections with price
+function orderform() {
+    if (inputArray == "pineapple"){
+      console.log("pineapple")
+      total =+ 1; 
+    };
+    if (inputArray == "pepper"){
+      total =+ 2; 
+    };
+    if 
 
-                        //display function taken from my mini finance report app
-                        // function show() {
-                        //   var content="<b>The Bills and Spending you entered:</b><br>";
-                        //   for(var i = 0; i < billamount.length; i++) {
-                        //      content +=billamount[i]+"<br>";
-                        //   } 
-                         
-                        //   for(var i = 0; i < spending.length; i++) {
-                        //     content +=spending[i]+"<br>";
-                        //   }
-                        //    document.getElementById('display').innerHTML = content;
-                        // }
+}
 
+                     
+var total = 0; 
+
+for (var i = 0; i < meow.length; i++) {
+    for (var j = 0; j < toppings.length; j++) {
+        if (meow[i] == toppings[j]) 
+            total = total + price[j];
+    }
+}
 // place order button
   //popup window "thanks"
 
