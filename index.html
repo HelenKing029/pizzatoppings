@@ -1,52 +1,45 @@
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+<meta charset="utf-8">
   <link rel="stylesheet" href="main.css">
   <script src="pizza.js"></script> 
   <title>Pizza Order</title>
- </head>
-
-
+  </head>
 <body>
-  <h1>Pizza Order</h1>
+
+ <h1>Pizza Order</h1>
 
 <!-- Toppings to select from -->
   <ul>  
-      <li>Pineapple</li>
-      <li>Mushrooms</li>
-      <li>Olives</li>
-      <li>Peppers</li>
-      <li>Pepperoni</li>
-      <li>Ham</li>
+      <li>Pineapple $1.00</li>
+      <li>Pepperoni $2.00</li>
+      <li>Mushrooms $2.00</li>
+      <li>Olives $1.00</li>
+      <li>Peppers $2.00</li>
   </ul>
 
 
 <!-- User inputs topping choices -->
 <h2>What Toppings Would You Like? </h2>
-  <p> Enter your toppings from the list above separated with a comma</p> 
-  <p> You can select up to 5 toppings for your pizza.</p> 
+  <p> Enter your toppings from the list above separated with a comma.</p> 
   <p>(Example: pineapple, pepper )</p>
+ <input type="text" id="choice" value="">
 
-  <!-- user select -->
-  <input type="text" id="inputbox"><br>
-  <br>
-  <button type="button" id="prepare">Prepare Order</button>
+<p>Click the Place Order button to display your choice of toppings and how much they will cost</p>
 
+<button onclick="myFunction()">Prepare Order </button>
 <br>
+Your order is as follows: 
 
+<p id="userinput"></p>
+<p id="ordertotal"></p>
 
-<!-- Selection Displayed -->
-
-<section class="preparedorder">   
-<!-- This shows what you have entered -->
-    <h2 class="headertitle"> This is what you ordered: </h2>
-    <div id="screen"></div>
-    <p id="statement"></
-</section>
 
 <!-- Submit Button with Popup -->
+Click on Place Order to confirm your selection
+<br>
+<button  id="submit" onclick="orderPlaced()">Place Order</button>
 
-<button  id="submit" onclick="myFunction()">Submit Order</button>
 
 </body>
 </html>
