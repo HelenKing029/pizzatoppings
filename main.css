@@ -26,7 +26,9 @@ body {
 
 
 button {
-	background-color: #F0C808; 
+	color: forestgreen;
+	background-color: white; 
+	font-size: 15px;
 }
 
 ul {
