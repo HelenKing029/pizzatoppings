@@ -1,45 +1,178 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
+  <title>Front End Pizza Toppings with Bootstrap</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="main.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="pizza.js"></script> 
-  <title>Pizza Order</title>
-  </head>
+</head>
 <body>
 
- <h1>Pizza Order</h1>
-
-<!-- Toppings to select from -->
-  <ul>  
-      <li>Pineapple $1.00</li>
-      <li>Pepperoni $2.00</li>
-      <li>Mushrooms $2.00</li>
-      <li>Olives $1.00</li>
-      <li>Peppers $2.00</li>
-  </ul>
-
-
-<!-- User inputs topping choices -->
-<h2>What Toppings Would You Like? </h2>
-  <p> Enter your toppings from the list above separated with a comma.</p> 
-  <p>(Example: pineapple, pepper )</p>
- <input type="text" id="choice" value="">
-
-<p>Click the Place Order button to display your choice of toppings and how much they will cost</p>
-
-<button onclick="myFunction()">Prepare Order </button>
-<br>
-Your order is as follows: 
-
-<p id="userinput"></p>
-<p id="ordertotal"></p>
+<div class="jumbotron text-center">
+  <h1 class="header">My Pizza Toppings</h1>
+  <h5>Build Your Perfect Pizza!</h5>
+</div>
+  
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4" id="toppinglist">
+      <h3>Pizza Options</h3>
+      <p>These are the toppings you have to select from: </p>
 
 
-<!-- Submit Button with Popup -->
-Click on Place Order to confirm your selection
-<br>
-<button  id="submit" onclick="orderPlaced()">Place Order</button>
+
+<div class="container">
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Pineapple</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Pineapple $1.00</h4>
+        </div>
+        <div class="modal-body">
+          <img src="http://image.made-in-china.com/2f0j00oYDEIFgGVawz/Canned-Pineapple-Chunk.jpg" alt="pineapple" style="width:200px;height:200px;">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2">Pepperoni</button>
+<div class="container">
+<!-- Modal -->
+  <div class="modal fade" id="myModal2" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Pepperoni $2.00</h4>
+        </div>
+        <div class="modal-body">
+          <img src="http://goldenagecheese.com/blog/wp-content/uploads/2015/05/Turkey-Pepperoni1.jpg" alt="pepperoni" style="width:200px;height:200px;">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="container">
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal3">Mushrooms</button>
+<div class="container">
+<!-- Modal -->
+  <div class="modal fade" id="myModal3" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Mushrooms $2.00</h4>
+        </div>
+        <div class="modal-body">
+          <img src="http://assets.eatingwell.com/sites/default/files/imagecache/310_square/mushrooms.jpg" alt="pepperoni" style="width:200px;height:200px;">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="container">
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal4">Olives</button>
+<div class="container">
+<!-- Modal -->
+  <div class="modal fade" id="myModal4" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Olives $1.00</h4>
+        </div>
+        <div class="modal-body">
+          <img src="http://kingrichiespizza.com/wp-content/uploads/2014/05/Black-Olives.jpg" alt="Olives" style="width:200px;height:200px;">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="container">
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal5">Peppers</button>
+<div class="container">
+<!-- Modal -->
+  <div class="modal fade" id="myModal5" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Peppers $2.00</h4>
+        </div>
+        <div class="modal-body">
+          <img src="http://www.edenbrothers.com/store/media/_GroupPages/Peppers-Sweet.jpg" alt="peppers" style="width:200px;height:200px;">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+    </div>
+
+
+    <div class="col-sm-4">
+      <h3>What Toppings Would You Like? Select from the left</h3>
+      <p>Enter your toppings from the list above separated with a comma.</p>
+      <p>(Example: pineapple, peppers )</p>
+      <input class="form-control" type="text" id="choice" value="">
+        <p>Click the Place Order button to display your choice of toppings and how much they will cost</p>
+        <button type="button" class="btn btn-success" id="prepare" onclick="myFunction()">Prepare Order </button>
+    </div>
+
+    <div class="col-sm-4">
+      <h3>Your order is as follows:</h3>
+        <p id="userinput"></p>
+        <p id="ordertotal"></p>
+        <!-- Submit Button with Popup -->
+        Click on Place Order to confirm your selection
+        <br>
+        <button  button type="button" class="btn btn-success" id="submit" onclick="orderPlaced()">Place Order</button>
+    </div>
+  </div>
+</div>
+
+
+
+
 
 
 </body>
 </html>
+
+

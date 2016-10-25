@@ -1,8 +1,19 @@
+
+.jumbotron {
+	color:#1abc9c;
+	margin-bottom: 10px;
+}
+
+.header {
+	color:#1abc9c;
+}
+
+
+
 h1 {
 	font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
 	font-style: normal;
 	font-variant: normal;
-	font-weight: 500;
 	line-height: 26.4px;
 	font-size: 40px;
 	color: #086788;
@@ -13,15 +24,15 @@ h2 {
 	font-size: 20px;
 }
 
+h5 {
+	font-size: 20px;
+	margin-top: 10px;
+}
+
 body {
 	font-family: Verdana, Geneva, sans-serif;
 	font-size: 16px;
-	padding: 30px;
-	border-style: solid;
-	border-color: #06AED5;
-	text-align: center; 
-	max-width: 600px;
-	align-content: center; 
+
 }
 
 
@@ -35,8 +46,8 @@ ul {
 	list-style-type: none; 
 }
 
-#submit {
-	color: red;
-	background-color: white; 
-	font-size: 15px;
+#submit, 
+#prepare {
+	background-color: #1abc9c;
+
 }
