@@ -8,7 +8,9 @@
 	color:#1abc9c;
 }
 
-
+.center-block {
+	align: center;
+}
 
 h1 {
 	font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
@@ -50,4 +52,11 @@ ul {
 #prepare {
 	background-color: #1abc9c;
 
+}
+
+#pizzaimage {
+
+	max-width: 100px;
+	max-height: 100px; 
+	align: center; 
 }
